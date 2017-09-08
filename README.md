@@ -1,24 +1,47 @@
-# README
+# Message Board
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![status|done](http://jeffreynerona.com/badges/status-done.svg)](http://jeffreynerona.com/projects) [![type|practice-project](http://jeffreynerona.com/badges/type-practiceproject.svg)](http://jeffreynerona.com/projects/) [![language|ruby](http://jeffreynerona.com/badges/language-ruby.svg)](http://jeffreynerona.com/projects/javascript)  [![type|practice-project](http://jeffreynerona.com/badges/technology-rubyonrails.svg)](http://jeffreynerona.com/projects/)
 
-Things you may want to cover:
+A simple message board application using Ruby On Rails. 
 
-* Ruby version
+![jeffreynerona|photobard](https://raw.githubusercontent.com/jeffreynerona/message_board/master/screenshot/messageboard.png)
 
-* System dependencies
+# Features
 
-* Configuration
+  - Login and Register
+  - Create, View, Update, and Delete Post
+  - Create, View, Update, and Delete Comments
 
-* Database creation
+# Gems Used
 
-* Database initialization
+  - boostrap-sass
+  - simple_form
+  - devise
+  - pg
 
-* How to run the test suite
+# Installation
+Make a project folder then open it:
+```sh
+$ mkdir messageboard && cd messageboard
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone Repository:
+```sh
+$ git clone git@github.com:jeffreynerona/message_board.git
+```
 
-* Deployment instructions
+Install dependencies:
+```sh
+$ bundle install
+```
 
-* ...
+Migrate Database:
+```sh
+$ rake db:migrate
+```
+
+Run the server:
+```sh
+$ rails s
+```
+
